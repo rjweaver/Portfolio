@@ -1,0 +1,122 @@
+/* 
+    Document   : login
+    Created on : Oct 5, 2012, 3:40:14 PM
+    Author     : Rob_Weaver
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    background-color: grey;
+}
+
+h1,h2,h3,h4{
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: fantasy;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+h4 {
+    margin: 10px 0 0 30px;
+}
+
+td {
+    width: 150px;
+}
+
+
+#wrapper {
+    width: 1040px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#mainbox {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+#boxtop {
+    height: 100px;
+    width: 100%;
+    background-color: red;
+    top: 0;
+    border-radius: 9px 9px 0 0;
+}
+
+#boxbottom {
+    height: 43px;
+    width: 100%;
+    background-color: red;
+    border-radius:0 0 9px 9px;
+    margin-top: 60px;
+ 
+}
+
+#txtbox {
+    width: 150px;
+    height: 24px;
+    border: 1px solid #d1c7ac;
+    padding: 5px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+#chkbox {
+    margin-top: 20px;
+    margin-left: 170px;
+}
+
+#login {
+    margin: 20px;
+    margin-left: 100px;
+}
+
+.loginButton {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    padding: 5px;
+/*    background-color: red;*/
+/*    color: white;*/
+/*    border: 1px solid white;*/
+    position: relative;
+    left: 180px;
+}
+
+.loginButton a {
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: red;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.loginButton a:hover {
+    background-color: white;
+    color: red;
+}

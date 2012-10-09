@@ -50,7 +50,8 @@
                     <h5 id="contactButton">Contact</h5>
                     
                     <ul>
-                        <li><a href=""><h4>Email</h4></a></li>
+                        <li><a href=""><h4>Email:rjweaver@me.com</h4></a></li>
+                        
                         <li><a href=""><h4>Phone</h4></a></li>
                         
                     </ul>
@@ -69,8 +70,8 @@
                 <div id="main">
                     
                     <ul>
-                        <li><div id="picbox"></div></li>
-                        <li><div id="picbox"></div></li>
+                        <li><div id="picbox"><a class="fancybox" href="SimpleLogin.php">Simple Login</a></div></li>
+                        <li><div id="picbox"><a class="fancybox" href="images/Best Deals snip.png"><img src="images/Best Deals snip.png" alt="Best Deals"></a></div></li>
                         <li><div id="picbox"></div></li>
                         <li><div id="picbox"></div></li>
                         <li><div id="picbox"></div></li>
@@ -83,13 +84,13 @@
                 
                 <section>
                     <h3>- Web Design -</h3>
-                    <p>Simple, clean, and stylish sites for personal or business use.</p>
+                    <p style="color: goldenrod;">Simple, clean, and stylish sites for personal or business use.</p>
                     
                 </section>
                 
                 <section>
                     <h3>- Implementation -</h3>
-                    <p>HTML5 and CSS3 allow a more dynamic site without more plug-ins.</p>
+                    <p style="color:goldenrod;">HTML5 and CSS3 allow a more dynamic site without more plug-ins.</p>
                 </section>
                 
             </div>  <!-- end Content -->
