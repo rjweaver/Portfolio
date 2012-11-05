@@ -65,12 +65,12 @@
             
             <div id="content">
                 
-                <div id="line"></div>
+                <div id="line"><h2>Portfolio</h2></div>
                 
                 <div id="main">
                     
                     <ul>
-                        <li><div id="picbox"><a class="fancybox" href="SimpleLogin.php">Simple Login</a></div></li>
+                        <li><div id="picbox"><a class="fancybox" href="SimpleLogin.php"><img src="images/Login snip.png" alt="Simple Login"</a></div></li>
                         <li><div id="picbox"><a class="fancybox" href="images/Best Deals snip.png"><img src="images/Best Deals snip.png" alt="Best Deals"></a></div></li>
                         <li><div id="picbox"></div></li>
                         <li><div id="picbox"></div></li>
@@ -80,7 +80,7 @@
                     
                 </div> <!-- end Main -->
                 
-                <div id="line2"></div>
+                <div id="line2"><h2>Services</h2></div>
                 
                 <section>
                     <h3>- Web Design -</h3>
@@ -103,10 +103,10 @@
         <!-- The Text Heading for page sections, may add animation
              or move back inside the wrapper at a later time -->
         
-        <div id="portfolioBox"><h2>Portfolio</h2></div>
+       <!-- <div id="portfolioBox"><h2>Portfolio</h2></div>
         <div id="serviceBox"><h2>Services</h2></div>
         
-        
+        -->
         
         
     </body>

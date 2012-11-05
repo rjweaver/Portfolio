@@ -22,12 +22,13 @@ body {
     background-image: url('darkbluebgg.png'); 
     font: 20px/1.5 Arial, sans-serif; 
     border-top: 5px solid #efefef;
-    margin: 0;
-    
+    margin: 0; 
 } 
 
 
-
+html{
+    height: 100%;
+}
 
 h1, h2, h3, h4 h5{
     text-transform: uppercase;
@@ -117,20 +118,33 @@ hgroup {
 }
 
 #line {
-    height: 8px;
+    height: 12px;
     width: 700px;
     background-color: whitesmoke;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 20px 0; 
+}
+
+#line h2 {
+    color: orangered;
+    font-size: 24px;
+    margin-left: 20px;
+    font-style: bold;
     
 }
 
 #line2 {
-    height: 8px;
+    height: 12px;
     width: 700px;
     background-color: whitesmoke;
-    margin: 10px 0 20px 0px;
-    position: relative;
-    top: 450px;
+    margin: 450px 0 20px 0px;
+    
+}
+
+#line2 h2 {
+    color: orangered;
+    font-size: 24px;
+    margin-left: 20px;
+
 }
 
 #content
@@ -157,7 +171,7 @@ hgroup {
 
 section {
     float: left;
-    margin: 130px 30px 30px 20px;
+    margin: 60px 30px 30px 20px;
     width: 255px;
 }
 
@@ -179,7 +193,7 @@ img {
     text-align: center;
 }
 
-#portfolioBox {
+/*#portfolioBox {
     height: 26px;
     width: 124px;
     background-color: midnightblue;
@@ -204,12 +218,12 @@ img {
     height: 26px;
     width: 108px;
     background-color: midnightblue;
-    position: absolute;
-    top: 533px;
+    position: relative;
+    top: 525px;
     left: 284px;
     z-index: 2;
     padding: 0 4px 8px 4px;
-    margin-left: 42px; 
+    margin-left: 42px auto; 
     border-radius: 6px;
     
 }
@@ -217,7 +231,7 @@ img {
 #serviceBox h2 {
     color: white;
     font-size: 20px;
-}
+}*/
 
 
 

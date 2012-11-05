@@ -1,0 +1,240 @@
+/* 
+    Document   : newtry
+    Created on : Oct 9, 2012, 5:58:43 PM
+    Author     : Rob_Weaver
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+html, body {
+    font-family:Arial, Calibri; 
+    background-color:#bababa; 
+    margin:0; 
+    padding:0; 
+    text-align:center;
+    overflow:hidden;
+	    }
+	    
+	    /*** horizontal list applied to thumbnails, nav controls ***/
+ul {
+    float:left;
+    width:100%;
+    margin: 0px 0px 20px 0px;
+    padding:0;
+    list-style-type:none;
+    }
+    
+li {display:inline; margin-right:5px;} 
+        
+	    
+	    /*** pop-up div to cover entire area ***/
+.divModalDialog  {
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+    /*! important !*/
+    display:none;
+    /* last attribute set darkness on scale: 0...1.0 */
+/*		    background-color:    rgba(255,0,0,0.8);*/
+    background-color: none;
+    text-align:center;
+    z-index:101;
+	    }
+	    
+	    /*** ! target attribute does the job ! ***/
+.divModalDialog:target  { display:block; }
+        
+        /*** virtual frame containing controls, image and caption ***/
+.divModalDialog div  {
+       /* either absolute or fixed */
+    position:absolute;
+    top:100px;
+    left: 600px;
+    min-width:200px;
+    min-height:300px;
+    background-color: grey;
+            /* rounded corners */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index:102;
+    opacity: .9;
+	    }
+	    
+        /*** header used as main image caption  ***/
+.divModalDialog div h1  {
+    min-width: 100px;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    font-size: 24px;
+    color:#dadada;
+    z-index:103;
+     /* add shadows to text */
+/*    -moz-text-shadow: 10px 3px 4px 6px rgba(0,0,0,0.9);  
+    -webkit-text-shadow: 3px 4px 6px rgba(0,0,0,0.9);  
+    text-shadow: 10px 4px 6px rgba(0,0,0,0.9); */
+        }	    
+ 
+        /*** main image style ***/
+.divModalDialog img {
+    padding:10px;
+    z-index:105;
+    border: solid 1px gray;
+     /* rounded corners */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: -moz-linear-gradient(top, #dadada, #505050 5%, 
+                                     #bababa 50%, #303030 50%, #101010);
+    
+    background: -webkit-gradient(linear, center top, center bottom, 
+                                                    from(#dadada), 
+                                                    color-stop(0.05, #505050), 
+                                                    color-stop(0.5, #bababa), 
+                                                    color-stop(0.5, #303030), 
+                                                    to(#101010));
+        } 
+ 
+        /*** navigation controls style: highest z-index ! ***/
+.divModalDialog ul a  {
+    padding:5px;
+    margin: 10px 0 0 0;
+    font-size:20px;
+    font-weight:bold;
+    color:Yellow;
+    text-decoration:none;
+    border: solid 1px Gray;
+    /* rounded corners */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index:110;
+	    }
+ 
+        /*** div serves as thumbnais container  ***/
+#divThumbnails {
+    position:relative;
+    margin: 70px 0 0 0;
+    height:250px;
+    padding-top:30px;
+    background-color:#cacaca;
+            
+    /* add shadows */
+    -moz-box-shadow: 5px 5px 10px rgba(50,50,50,0.7);
+    -webkit-box-shadow: 5px 5px 10px rgba(50,50,50,0.7);
+    box-shadow: 5px 5px 10px rgba(50,50,50,0.7);
+            
+            /* gradient effect with color-stop */
+    background: -moz-linear-gradient(top, #f0f0f0, 
+                                                #baaaaa 10%, 
+                                                #cacaca 49%, 
+                                                #909090 50%, 
+                                                #cacaca 50%, 
+                                                #cacaca 90%, 
+                                                #ababab);
+    background: -webkit-gradient(linear, center top, center bottom, 
+                                                from(#f0f0f0), 
+                                                color-stop(0.1, #bababa ), 
+                                                color-stop(0.49, #cacaca), 
+                                                color-stop(0.50, #909090), 
+                                                color-stop(0.50, #cacaca), 
+                                                color-stop(0.90, #cacaca), 
+                                                to(#ababab));
+        }
+ 
+	    /*** thumbnails image style ***/
+        #divThumbnails img {
+            padding:10px;
+            height:200px;
+            max-width:300px;
+            border: solid 1px gray;
+            /* rounded corners */
+        	-moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            /* add shadows */
+            -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+            -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.5);        
+            z-index:1;
+        } 
+ 
+        /*** hover effects increase visual responsiveness ***/
+        #divThumbnails img:hover, .divModalDialog ul a:hover
+        {
+            background:#505050;
+            background: -moz-linear-gradient(top, #eaeaea, 
+                                                #505050 50%, 
+                                                #303030 50%, 
+                                                #404040);
+            background: -webkit-gradient(linear, left top, left bottom, 
+                                                        from(#eaeaea),
+                                                        color-stop(0.5, #505050), 
+                                                        color-stop(0.5, #303030), 
+                                                        to(#404040));
+	    }
+ 
+   
+            #planet {
+/*                position: relative;*/
+                left: 100px;
+                width: 80px;
+                height: 80px;
+                background-color: red;
+                padding: 0;
+                margin: 5px;
+                text-align: center;
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+            }          
+            
+ 
+	    /* page footer/header: fixed */
+	    #footer, #header {
+	        position:fixed;
+	        margin:0;
+	        padding:0;
+	        text-align:center;
+	        background-color:#606060;
+	        color: #cacaca;
+	        /* add shadows to text */
+            -moz-text-shadow: 10px 3px 4px 6px rgba(10,10,10,0.6);  
+            -webkit-text-shadow: 3px 4px 6px rgba(10,10,10,0.6);  
+            text-shadow: 3px 4px 6px rgba(10,10,10,0.6);    
+	    }
+            
+	    #header{
+	        top:0; 
+	        height:70px; 
+	        width:100%;
+            background:#404040;
+	    }
+            
+	    #footer {
+	        width:75%;
+	        bottom:0;
+	        height:50px;
+            padding-top:15px;
+	        text-align:left;
+	        text-indent:20%;
+	        /* top rounded corners */
+            -webkit-border-top-right-radius: 40px;
+            -moz-border-radius-topright: 40px;
+            border-top-right-radius: 40px;
+            background: -moz-linear-gradient(top, #ababab, 
+                                                    #505050 70%, 
+                                                    #303030 70%, 
+                                                    #202020 );
+            background: -webkit-gradient(linear, left top, left bottom, 
+                                        from(#ababab),
+                                        color-stop(0.75, #505050), 
+                                        color-stop(0.75, #303030), 
+                                        to(#202020));  
+	    }

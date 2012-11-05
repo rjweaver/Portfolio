@@ -1,0 +1,73 @@
+/* 
+    Document   : reddit2
+    Created on : Oct 9, 2012, 3:40:38 PM
+    Author     : Rob_Weaver
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+ul {overflow: hidden;}
+
+#wrapper {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.button {
+    height: 100px;
+    width: 250px;
+}
+
+.button ul {
+    
+}
+
+
+.expbox {
+    height: 10px;
+    width: 10px;
+    opacity: .5;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    background-color: grey;
+    border: 4px solid grey;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.expbox h1, .expbox p{
+    opacity: 0;
+    color: black;
+    z-index: 10;
+    padding: 5px;
+}
+
+
+.expbox:hover {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    
+    height: 200px;
+    width: 200px;
+    opacity: .8;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    background-color: blue; 
+    
+}
+
+.expbox:hover h1, .expbox:hover p {
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    
+     opacity: 1;
+}
+

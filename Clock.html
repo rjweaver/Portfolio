@@ -1,0 +1,119 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clock</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            .clockbox {
+                width: 100px;
+                height: 50px;
+                padding: 6px;
+                color: black;
+                border: 1px solid grey;
+                background-color: cyan;
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold;
+                font-family: "Arial Black", Gadget, sans-serif;
+                display: inline;
+            }
+            
+        </style>
+        
+        
+    
+    </head>
+    <body>
+        <h1>Digital Clock</h1>
+        
+        <div class="clockbox" id="clock">
+            
+        </div>
+        
+        <button id="btn1">Regular Time</button>
+        <button id="btn2">Military Time</button>
+        
+        
+        <script type="text/javascript" language="javascript">
+            
+            document.getElementById('btn1').onclick=function(){regularTime();}
+            document.getElementById('btn2').onclick=function(){militaryTime();}
+            
+            
+            function regularTime(){
+                
+                var currentTime = new Date();
+                var amPM = "AM";
+                var h = currentTime.getHours();
+                var m = currentTime.getMinutes();
+                var s = currentTime.getSeconds();
+                
+                if(h == 0)
+                    {
+                        h = 12;
+                    }
+                else if (h > 12)
+                    {
+                        h = h-12;
+                        amPM = "PM"
+                    }
+                
+                if(h < 10) {
+                    h = "0" + h;
+                }
+                if(m < 10) {
+                    m = "0" + m;
+                }
+                if(s < 10) {
+                    s = "0" + s;
+                }
+                
+                var myClock = document.getElementById("clock");
+                myClock.textContent = h + ":" + m + ":" + s + "" + amPM;
+                myClock.innerText = h + ":" + m + ":" + s + "" + amPM;
+                
+                setTimeout('regularTime()', 1000);
+            }
+            
+            
+            function militaryTime(){
+                
+                var currentTime = new Date();
+                var amPM = "AM";
+                var h = currentTime.getHours();
+                var m = currentTime.getMinutes();
+                var s = currentTime.getSeconds();
+                
+                if (h > 12)
+                    {
+                        amPM = "PM"
+                    }
+                
+                if(h < 10) {
+                    h = "0" + h;
+                }
+                if(m < 10) {
+                    m = "0" + m;
+                }
+                if(s < 10) {
+                    s = "0" + s;
+                }
+                
+                var myClock = document.getElementById("clock");
+                myClock.textContent = h + ":" + m + ":" + s + "" + amPM;
+                myClock.innerText = h + ":" + m + ":" + s + "" + amPM;
+                
+                setTimeout('militaryTime()', 1000);
+            }
+            
+            //militaryTime();
+            
+        </script>
+        
+        
+    </body>
+</html>

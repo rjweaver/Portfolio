@@ -1,0 +1,129 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<link rel="stylesheet" href="css/newtry.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="dom-drag.js"></script>
+
+    </head>
+    <body>
+        
+       
+   <div id="header">
+        <h2>Pop Up Window implemented with only CSS</h2>
+    </div>
+    
+    <!-- NAV THUMBNAILS -->
+    <div id="divThumbnails">
+        <ul>
+            <li><a href="#divModalDialog1"><img
+                src="http://webinfocentral.com/html5/Travolta.JPG" 
+                alt="JOHN TRAVOLTA, NICOLAS CAGE, NY MUSEUM" /></img></a></li>
+            <li><a href="#divModalDialog2"><img
+                src="http://webinfocentral.com/html5/TitanicEffortsNY.JPG" 
+                alt="TITAN ATLAS NY" /></img></a></li>
+            <li><a href="#divModalDialog3"><img
+                src="http://webinfocentral.com/html5/Diesel.JPG" 
+                alt="DIESEL STORE NY" /></img></a></li>
+            <li><a href="#divModalDialog4"><img
+                src="http://webinfocentral.com/html5/Nereid_Thought.JPG" 
+                alt="NEREID THOUGHT NY" /></img></a></li>
+        </ul>
+    </div>
+    
+    <div id="planet" style="position: relative;">
+        <ul>
+            <li><a id="example" href="#divModalDialog5">planet</a></li>
+        </ul>
+    </div>
+    
+ 
+ 
+    <!--1st LINK -->
+    <div id="divModalDialog1" class="divModalDialog">
+        <div>
+            <h1>Reddit Title Goes Here!!</h1>
+            <img src="http://webinfocentral.com/html5/Travolta.JPG" alt="" />
+            <ul>
+                <li><a href="#">CLOSE</a></li>                      <!--CLOSE SYMBOL-->
+                <li><a href="http://exm.nr/NYquiz26">YES</a></li>  <!--EXTERNAL LINK-->
+            </ul>
+            
+            
+        </div>
+    </div>
+    
+    
+    
+    <!--5th LINK -->
+    
+    <div id="divModalDialog5" class="divModalDialog" style="position: absolute;">
+        <div>
+            <h1>Reddit Title Goes Here!!</h1>
+            <img src="http://i.imgur.com/mTjO4.png" alt="" title="Hosted by imgur.com" />
+            <ul>
+                <li><a href="#">CLOSE</a></li>                      <!--CLOSE SYMBOL-->
+                <li><a href="#">YES</a></li>  <!--EXTERNAL LINK-->
+            </ul>
+            
+            
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+            Drag.init(document.getElementById("divModalDialog5"));
+        </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+    <!--2nd LINK -->
+    <div id="divModalDialog2" class="divModalDialog"><div>
+            <h1>YOU WILL BE REDIRECTED TO THE NY POP-QUIZ: OK/CANCEL?</h1>
+            <ul>
+                <li><a href="#">⊗</a></li>                 <!--CLOSE-->
+                <li><a href="http://exm.nr/NYquiz3">OK</a></li> <!--EXTERNAL LINK-->
+            </ul>
+            <img src="http://webinfocentral.com/html5/TitanicEffortsNY.JPG" alt="TITAN ATLAS" />
+    </div></div>
+ 
+    <!--3rd LINK -->
+    <div id="divModalDialog3" class="divModalDialog"><div>
+            <h1>YOU WILL BE REDIRECTED TO THE NY POP-QUIZ (EXTERNAL LINK): YES/NO?</h1>
+            <ul>
+                <li><a href="#">Oh, NO!</a></li>                              <!--CLOSE-->
+                <li><a href="http://exm.nr/NYquiz22">SURE THING, YES!</a></li><!--EXTERNAL LINK-->
+            </ul>
+            <img src="http://webinfocentral.com/html5/Diesel.JPG" alt="DIESEL STORE NY" />
+     </div></div>
+ 
+    <!--4th LINK -->
+    <div id="divModalDialog4" class="divModalDialog"><div>
+            <h1>DUDE, DO YOU WANNA TRY NY FUN-QUIZ AND HAVE FUN?</h1>
+            <ul>
+                <li><a href="#">OH MAN NOT NOW!</a></li>                     <!--CLOSE-->
+                <li><a href="http://exm.nr/NYquiz16">YEAH, LET'S GO!</a></li><!--EXTERNAL LINK-->
+            </ul>
+            <img src="http://webinfocentral.com/html5/Nereid_Thought.JPG" alt="NEREID THOUGHT NY" />
+    </div></div>
+ 
+    <div id="footer">
+    </div>
+        
+        
+    </body>
+</html>
